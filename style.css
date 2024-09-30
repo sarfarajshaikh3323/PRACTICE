@@ -1,0 +1,53 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+body {
+    font-family: verdana;
+}
+
+span {
+    display: inline-block;
+    font-weight: bold;
+    animation-fill-mode: backwards
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h1,
+p {
+    display: inline-block;
+}
+
+.zoomOutIn {
+    animation: zoomOutIn 1s forwards ease-in-out;
+    opacity: 0;
+}
+
+@keyframes zoomOutIn {
+    from {
+        opacity: 00;
+        transform: scale(2);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
